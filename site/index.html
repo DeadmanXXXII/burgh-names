@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BurghNames: your name, in every place in the UK</title>
+<meta name="description" content="Type your business name and see it under every UK place: aone-removals.ayrshire.scot, aone-removals.london.uk and more. Pay once in crypto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#e8edef;--ink:#13222b;--sign:#0a4a7c;--amber:#f2b01e;--muted:#4b5c66}
+@media(prefers-color-scheme:dark){:root{--paper:#0e1a21;--ink:#e8edef;--muted:#9db0bb}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.6 "Source Serif 4",Georgia,serif;padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+h1,h2,h3,button,label,.fq,.st{font-family:"Barlow Condensed","Arial Narrow",Arial,sans-serif}
+.brand{display:block;padding-top:22px;font:700 1.5rem "Barlow Condensed",Arial,sans-serif}
+h1{font-size:clamp(2.3rem,8vw,4.2rem);line-height:1;margin:38px 0 14px;font-weight:700}
+.lede{max-width:34em;color:var(--muted);margin:0 0 26px}
+.finder{background:var(--sign);border:6px solid #fff;outline:2px solid var(--sign);border-radius:14px;padding:20px;color:#fff}
+.finder label{display:block;font-weight:500;font-size:1.05rem;margin:14px 0 6px;opacity:.9}
+.finder label:first-child{margin-top:0}
+input,select{width:100%;font:500 1.25rem "Barlow Condensed",Arial,sans-serif;padding:10px 12px;border-radius:8px;border:2px solid #fff;background:#fff;color:#111;min-height:48px}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.list{max-height:430px;overflow:auto;border-radius:8px;background:#ffffff14;margin-top:6px}
+.list h3{margin:0;padding:8px 12px;font-size:1rem;font-weight:700;background:#00000030;position:sticky;top:0}
+.opt{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;text-align:left;background:transparent;color:#fff;border:0;border-bottom:1px solid #ffffff22;padding:9px 12px;min-height:48px;cursor:pointer;font:500 1.15rem "Barlow Condensed",Arial,sans-serif}
+.opt[disabled]{opacity:.5;cursor:default}
+.opt[aria-pressed=true]{background:#fff;color:#0a4a7c}
+.fq{word-break:break-all}.st{white-space:nowrap;font-size:.95rem;opacity:.85}
+.sign{font-family:"Barlow Condensed",Arial,sans-serif;font-size:clamp(1.25rem,5vw,2rem);font-weight:700;margin:20px 0 4px;word-break:break-all;line-height:1.15}
+.sign small{display:block;font-size:1rem;font-weight:500;opacity:.8;margin-top:4px}
+.status{min-height:1.6em;margin:6px 0 14px;font-size:1rem}
+.status.ok{color:#b8f2c8}.status.bad{color:#ffd0d0}
+button.pay{background:var(--amber);color:#1b1500;border:0;border-radius:8px;font-weight:700;font-size:1.3rem;padding:12px 22px;min-height:48px;cursor:pointer}
+button.pay[disabled]{opacity:.45;cursor:not-allowed}
+.price{margin-left:12px;font:500 1.1rem "Barlow Condensed",Arial,sans-serif}
+#pp{display:none;margin-top:18px;padding-top:16px;border-top:2px solid #ffffff55}
+#pp .big{font:700 1.5rem "Barlow Condensed",Arial,sans-serif;word-break:break-all;margin:4px 0}
+#pp button.sm{background:#fff;color:#0a4a7c;border:0;border-radius:6px;padding:6px 12px;font:700 1rem "Barlow Condensed",Arial,sans-serif;cursor:pointer;margin:4px 6px 4px 0;min-height:40px}
+#pp a{color:#fff}
+input[type=checkbox]{width:auto;min-height:0;margin:4px 10px 0 0;transform:scale(1.3);flex:none}
+.agree{display:flex;align-items:flex-start;font-size:1rem;line-height:1.35;margin:10px 0 4px!important}.agree a{color:#fff}
+section{padding:46px 0 0}h2{font-size:2rem;margin:0 0 10px}
+ol{padding-left:1.2em}li{margin:8px 0}code{font-family:ui-monospace,Menlo,monospace;font-size:.9em}
+footer{padding:44px 0 40px;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<span class="brand" id="brand"></span>
+<h1>Your name, in every place in the UK.</h1>
+<p class="lede">Type your name once and see it under every place: <strong>aone-removals-and-uplifts.ayrshire.scot</strong>, <strong>.london.uk</strong>, <strong>.pontapandy.wales</strong> and the rest. Pick one, pay once in crypto, and it points at your site.</p>
+
+<div class="finder" role="region" aria-label="Domain generator">
+  <label for="site">Your site address</label>
+  <input id="site" inputmode="url" autocomplete="off" placeholder="https://deadmanxxxii.github.io/AONE-removals-and-uplifts">
+  <label for="nm">Name you want</label>
+  <input id="nm" autocomplete="off" placeholder="aone-removals-and-uplifts">
+  <label for="flt">Find a place</label>
+  <input id="flt" autocomplete="off" placeholder="Try ayrshire, london, wales...">
+  <div class="list" id="list" role="group" aria-label="Addresses"></div>
+
+  <div class="sign" id="sign" aria-live="polite"></div>
+  <p class="status" id="status"></p>
+  <label class="agree"><input type="checkbox" id="agree"><span>I accept the <a href="terms.html" target="_blank" rel="noopener">terms and acceptable use policy</a>. Misuse means immediate takedown with no refund.</span></label>
+  <label for="chain">Pay with</label>
+  <select id="chain"></select>
+  <p><button class="pay" id="pay" type="button" disabled>Get payment details</button><span class="price" id="price"></span></p>
+  <div id="pp" aria-live="polite">
+    <div>Send exactly this amount, in one transaction, from your own wallet (not an exchange):</div>
+    <div class="big" id="amt"></div>
+    <div>to this address:</div>
+    <div class="big" id="addr"></div>
+    <button class="sm" id="cpa" type="button">Copy amount</button><button class="sm" id="cpd" type="button">Copy address</button><a id="open" href="#">Open in wallet</a>
+    <label for="tx">Then paste the transaction ID</label>
+    <input id="tx" autocomplete="off" placeholder="Transaction ID / signature">
+    <p><button class="pay" id="vf" type="button">Verify payment</button></p>
+    <div id="done"></div>
+  </div>
+</div>
+
+<section>
+  <h2>How it works</h2>
+  <ol>
+    <li>Paste your GitHub Pages link. The name fills in from your repository.</li>
+    <li>Pick a place from the list. Places marked "Opening soon" aren't on sale yet.</li>
+    <li>One payment, no renewals: £<span id="p1"></span> for a standard name, £<span id="p2"></span> for a trade name like <code>removals</code>.</li>
+    <li>When the payment confirms on-chain, a DNS record points your name at your site. Then open your repository's Settings, then Pages, and enter the name as the custom domain.</li>
+  </ol>
+  <p>Names that look like councils, police, health services, banks or government are never sold, and misuse leads to immediate takedown. Read the <a href="terms.html">terms</a>.</p>
+</section>
+<footer><a href="terms.html" style="color:inherit">Terms and acceptable use</a>. Independent service. Not affiliated with any council, registry or public body.</footer>
+</div>
+
+<script src="config.js"></script>
+<script>
+(function(){
+  var C=window.BURGH,$=function(i){return document.getElementById(i)};
+  $("brand").textContent=C.brand;$("p1").textContent=C.prices.standard;$("p2").textContent=C.prices.premium;
+  var places=[],live={},sel="",owner="",repo="",nameEdited=false,order=null;
+  C.chains.forEach(function(c){var o=document.createElement("option");o.value=c;o.textContent={SOL:"Solana (SOL)",BTC:"Bitcoin (BTC)",ETH:"Ethereum (ETH)"}[c];$("chain").appendChild(o)});
+
+  function slug(s){return s.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").slice(0,50)}
+  function parseSite(v){owner="";repo="";try{var u=new URL(v.trim());var m=u.hostname.toLowerCase().match(/^([a-z0-9-]+)\.github\.io$/);if(m){owner=m[1];repo=u.pathname.split("/")[1]||""}}catch(e){}}
+  function okName(n){return !n.split("-").some(function(t){return C.reserved.indexOf(t)>-1})&&n.indexOf("gov")!==0&&!/hmrc|nhs|govuk/.test(n)}
+  function nameError(s){
+    if(s.length<3)return "Names need at least 3 characters.";
+    if(!okName(s))return "That name is reserved for public bodies and registries.";
+    return "";
+  }
+
+  function renderList(){
+    var s=slug($("nm").value)||"your-name",f=$("flt").value.trim().toLowerCase(),L=$("list");
+    L.textContent="";
+    var rows=places.filter(function(p){var z=p.label+"."+p.tld;if(C.allowedTlds.indexOf(p.tld)<0||!okName(p.label))return false;return !f||z.indexOf(f)>-1||p.name.toLowerCase().indexOf(f)>-1||p.nation.toLowerCase().indexOf(f)>-1});
+    rows.sort(function(a,b){var la=live[a.label+"."+a.tld]?0:1,lb=live[b.label+"."+b.tld]?0:1;return la-lb});
+    var last="";
+    rows.forEach(function(p){
+      var z=p.label+"."+p.tld,isLive=!!live[z],grp=isLive?"On sale now":p.nation;
+      if(grp!==last){var h=document.createElement("h3");h.textContent=grp;L.appendChild(h);last=grp}
+      var b=document.createElement("button");b.type="button";b.className="opt";
+      b.setAttribute("aria-pressed",sel===z?"true":"false");b.disabled=!isLive;
+      var a=document.createElement("span");a.className="fq";a.textContent=s+"."+z;
+      var t=document.createElement("span");t.className="st";t.textContent=isLive?"Available":"Opening soon";
+      b.appendChild(a);b.appendChild(t);
+      if(isLive)b.addEventListener("click",function(){sel=z;order=null;$("pp").style.display="none";renderList();evaluate()});
+      L.appendChild(b);
+    });
+    if(!rows.length){var e=document.createElement("p");e.style.padding="12px";e.textContent="No place matches that.";L.appendChild(e)}
+  }
+
+  function evaluate(){
+    parseSite($("site").value);
+    if(owner&&!nameEdited)$("nm").value=slug(repo||owner);
+    var s=slug($("nm").value),st=$("status"),pay=$("pay");
+    $("sign").innerHTML="";
+    var main=document.createElement("span");main.textContent=(s||"your-name")+(sel?"."+sel:"");
+    $("sign").appendChild(main);
+    if(owner){var sm=document.createElement("small");sm.textContent="points to "+owner+".github.io"+(repo?"/"+repo:"");$("sign").appendChild(sm)}
+    pay.disabled=true;$("price").textContent="";st.className="status bad";
+    if(!owner){st.textContent=$("site").value?"Use a GitHub Pages link: https://name.github.io/repo":"";return}
+    var ne=nameError(s);if(ne){st.textContent=ne;return}
+    if(!sel){st.textContent="Pick a place from the list.";return}
+    var premium=C.premiumWords.indexOf(s)>-1;
+    st.className="status ok";st.textContent=premium?"Trade name, premium price. Availability is checked at payment.":"Looks good. Availability is checked at payment.";
+    pay.disabled=!$("agree").checked;$("price").textContent="£"+C.prices[premium?"premium":"standard"]+" one-off";
+  }
+  $("site").addEventListener("input",function(){nameEdited=false;evaluate();renderList()});
+  $("nm").addEventListener("input",function(){nameEdited=true;evaluate();renderList()});
+  $("flt").addEventListener("input",renderList);
+  $("agree").addEventListener("change",evaluate);
+
+  function post(path,body){return fetch(C.workerUrl+path,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)}).then(function(r){return r.json().then(function(j){if(!r.ok)throw new Error(j.error||"Request failed");return j})})}
+  function copy(t,b){navigator.clipboard.writeText(t).then(function(){var o=b.textContent;b.textContent="Copied";setTimeout(function(){b.textContent=o},1200)})}
+  $("pay").addEventListener("click",function(){
+    var b=this,st=$("status"),i=sel.indexOf(".");b.disabled=true;st.className="status ok";st.textContent="Getting your price...";
+    post("/quote",{name:slug($("nm").value),zone:sel,target:owner+".github.io",chain:$("chain").value,agreed:$("agree").checked,terms:"2026-10-11"})
+    .then(function(j){order=j;
+      $("amt").textContent=j.amountText+" "+$("chain").value;$("addr").textContent=j.address;$("open").href=j.uri;
+      $("pp").style.display="block";st.textContent="Price locked for 30 minutes (£"+j.price+" one-off).";
+      $("cpa").onclick=function(){copy(j.amountText,this)};$("cpd").onclick=function(){copy(j.address,this)};
+    }).catch(function(e){st.className="status bad";st.textContent=e.message;b.disabled=false});
+  });
+  $("vf").addEventListener("click",function(){
+    var d=$("done"),b=this;d.textContent="Checking the network...";b.disabled=true;
+    post("/verify",{orderId:order.orderId,txid:$("tx").value}).then(function(j){
+      d.textContent="Done. "+j.fqdn+" now points at your site. In your repository open Settings, then Pages, and enter "+j.fqdn+" as the custom domain.";
+    }).catch(function(e){d.textContent=e.message;b.disabled=false});
+  });
+
+  var q=new URLSearchParams(location.search).get("site");if(q)$("site").value=q;
+  Promise.all([
+    fetch("places.json").then(function(r){return r.json()}),
+    fetch(C.workerUrl+"/zones").then(function(r){return r.json()}).catch(function(){return {zones:[]}})
+  ]).then(function(r){places=r[0];(r[1].zones||[]).forEach(function(z){live[z]=1});renderList();evaluate()});
+})();
+</script>
+</body>
+</html>

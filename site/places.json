@@ -1,0 +1,836 @@
+[
+{
+"label": "aberdeen-city",
+"name": "Aberdeen City",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "aberdeenshire",
+"name": "Aberdeenshire",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "angus",
+"name": "Angus",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "argyll-and-bute",
+"name": "Argyll and Bute",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "clackmannanshire",
+"name": "Clackmannanshire",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "dumfries-and-galloway",
+"name": "Dumfries and Galloway",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "dundee-city",
+"name": "Dundee City",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "east-ayrshire",
+"name": "East Ayrshire",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "east-dunbartonshire",
+"name": "East Dunbartonshire",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "east-lothian",
+"name": "East Lothian",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "east-renfrewshire",
+"name": "East Renfrewshire",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "edinburgh",
+"name": "Edinburgh",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "falkirk",
+"name": "Falkirk",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "fife",
+"name": "Fife",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "glasgow",
+"name": "Glasgow",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "highland",
+"name": "Highland",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "inverclyde",
+"name": "Inverclyde",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "midlothian",
+"name": "Midlothian",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "moray",
+"name": "Moray",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "na-h-eileanan-siar",
+"name": "Na h-Eileanan Siar",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "north-ayrshire",
+"name": "North Ayrshire",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "north-lanarkshire",
+"name": "North Lanarkshire",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "orkney",
+"name": "Orkney",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "perth-and-kinross",
+"name": "Perth and Kinross",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "renfrewshire",
+"name": "Renfrewshire",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "scottish-borders",
+"name": "Scottish Borders",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "shetland",
+"name": "Shetland",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "south-ayrshire",
+"name": "South Ayrshire",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "south-lanarkshire",
+"name": "South Lanarkshire",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "stirling",
+"name": "Stirling",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "west-dunbartonshire",
+"name": "West Dunbartonshire",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "west-lothian",
+"name": "West Lothian",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "ayrshire",
+"name": "Ayrshire",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "lanarkshire",
+"name": "Lanarkshire",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "lothian",
+"name": "Lothian",
+"nation": "Scotland",
+"tld": "scot"
+},
+{
+"label": "blaenau-gwent",
+"name": "Blaenau Gwent",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "bridgend",
+"name": "Bridgend",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "caerphilly",
+"name": "Caerphilly",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "cardiff",
+"name": "Cardiff",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "carmarthenshire",
+"name": "Carmarthenshire",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "ceredigion",
+"name": "Ceredigion",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "conwy",
+"name": "Conwy",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "denbighshire",
+"name": "Denbighshire",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "flintshire",
+"name": "Flintshire",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "gwynedd",
+"name": "Gwynedd",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "isle-of-anglesey",
+"name": "Isle of Anglesey",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "merthyr-tydfil",
+"name": "Merthyr Tydfil",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "monmouthshire",
+"name": "Monmouthshire",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "neath-port-talbot",
+"name": "Neath Port Talbot",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "newport",
+"name": "Newport",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "pembrokeshire",
+"name": "Pembrokeshire",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "powys",
+"name": "Powys",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "rhondda-cynon-taf",
+"name": "Rhondda Cynon Taf",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "swansea",
+"name": "Swansea",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "torfaen",
+"name": "Torfaen",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "vale-of-glamorgan",
+"name": "Vale of Glamorgan",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "wrexham",
+"name": "Wrexham",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "pontapandy",
+"name": "Pontapandy",
+"nation": "Wales",
+"tld": "wales"
+},
+{
+"label": "london",
+"name": "London",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "barking-and-dagenham",
+"name": "Barking and Dagenham",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "barnet",
+"name": "Barnet",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "bexley",
+"name": "Bexley",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "brent",
+"name": "Brent",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "bromley",
+"name": "Bromley",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "camden",
+"name": "Camden",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "croydon",
+"name": "Croydon",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "ealing",
+"name": "Ealing",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "enfield",
+"name": "Enfield",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "greenwich",
+"name": "Greenwich",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "hackney",
+"name": "Hackney",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "hammersmith-and-fulham",
+"name": "Hammersmith and Fulham",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "haringey",
+"name": "Haringey",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "harrow",
+"name": "Harrow",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "havering",
+"name": "Havering",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "hillingdon",
+"name": "Hillingdon",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "hounslow",
+"name": "Hounslow",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "islington",
+"name": "Islington",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "kensington-and-chelsea",
+"name": "Kensington and Chelsea",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "kingston-upon-thames",
+"name": "Kingston upon Thames",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "lambeth",
+"name": "Lambeth",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "lewisham",
+"name": "Lewisham",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "merton",
+"name": "Merton",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "newham",
+"name": "Newham",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "redbridge",
+"name": "Redbridge",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "richmond-upon-thames",
+"name": "Richmond upon Thames",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "southwark",
+"name": "Southwark",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "sutton",
+"name": "Sutton",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "tower-hamlets",
+"name": "Tower Hamlets",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "waltham-forest",
+"name": "Waltham Forest",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "wandsworth",
+"name": "Wandsworth",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "westminster",
+"name": "Westminster",
+"nation": "London",
+"tld": "uk"
+},
+{
+"label": "birmingham",
+"name": "Birmingham",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "manchester",
+"name": "Manchester",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "leeds",
+"name": "Leeds",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "liverpool",
+"name": "Liverpool",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "bristol",
+"name": "Bristol",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "sheffield",
+"name": "Sheffield",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "newcastle",
+"name": "Newcastle",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "nottingham",
+"name": "Nottingham",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "leicester",
+"name": "Leicester",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "brighton",
+"name": "Brighton",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "oxford",
+"name": "Oxford",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "cambridge",
+"name": "Cambridge",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "york",
+"name": "York",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "bath",
+"name": "Bath",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "norwich",
+"name": "Norwich",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "southampton",
+"name": "Southampton",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "portsmouth",
+"name": "Portsmouth",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "plymouth",
+"name": "Plymouth",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "coventry",
+"name": "Coventry",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "reading",
+"name": "Reading",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "exeter",
+"name": "Exeter",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "cornwall",
+"name": "Cornwall",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "kent",
+"name": "Kent",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "essex",
+"name": "Essex",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "surrey",
+"name": "Surrey",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "devon",
+"name": "Devon",
+"nation": "England",
+"tld": "uk"
+},
+{
+"label": "belfast",
+"name": "Belfast",
+"nation": "Northern Ireland",
+"tld": "uk"
+},
+{
+"label": "antrim-and-newtownabbey",
+"name": "Antrim and Newtownabbey",
+"nation": "Northern Ireland",
+"tld": "uk"
+},
+{
+"label": "ards-and-north-down",
+"name": "Ards and North Down",
+"nation": "Northern Ireland",
+"tld": "uk"
+},
+{
+"label": "causeway-coast-and-glens",
+"name": "Causeway Coast and Glens",
+"nation": "Northern Ireland",
+"tld": "uk"
+},
+{
+"label": "derry-city-and-strabane",
+"name": "Derry City and Strabane",
+"nation": "Northern Ireland",
+"tld": "uk"
+},
+{
+"label": "fermanagh-and-omagh",
+"name": "Fermanagh and Omagh",
+"nation": "Northern Ireland",
+"tld": "uk"
+},
+{
+"label": "lisburn-and-castlereagh",
+"name": "Lisburn and Castlereagh",
+"nation": "Northern Ireland",
+"tld": "uk"
+},
+{
+"label": "mid-and-east-antrim",
+"name": "Mid and East Antrim",
+"nation": "Northern Ireland",
+"tld": "uk"
+},
+{
+"label": "mid-ulster",
+"name": "Mid Ulster",
+"nation": "Northern Ireland",
+"tld": "uk"
+},
+{
+"label": "newry-mourne-and-down",
+"name": "Newry Mourne and Down",
+"nation": "Northern Ireland",
+"tld": "uk"
+},
+{
+"label": "cork",
+"name": "Cork",
+"nation": "Ireland",
+"tld": "ie"
+},
+{
+"label": "dublin",
+"name": "Dublin",
+"nation": "Ireland",
+"tld": "ie"
+},
+{
+"label": "galway",
+"name": "Galway",
+"nation": "Ireland",
+"tld": "ie"
+},
+{
+"label": "limerick",
+"name": "Limerick",
+"nation": "Ireland",
+"tld": "ie"
+},
+{
+"label": "waterford",
+"name": "Waterford",
+"nation": "Ireland",
+"tld": "ie"
+},
+{
+"label": "kerry",
+"name": "Kerry",
+"nation": "Ireland",
+"tld": "ie"
+},
+{
+"label": "clare",
+"name": "Clare",
+"nation": "Ireland",
+"tld": "ie"
+},
+{
+"label": "mayo",
+"name": "Mayo",
+"nation": "Ireland",
+"tld": "ie"
+},
+{
+"label": "donegal",
+"name": "Donegal",
+"nation": "Ireland",
+"tld": "ie"
+},
+{
+"label": "wicklow",
+"name": "Wicklow",
+"nation": "Ireland",
+"tld": "ie"
+},
+{
+"label": "kilkenny",
+"name": "Kilkenny",
+"nation": "Ireland",
+"tld": "ie"
+},
+{
+"label": "sligo",
+"name": "Sligo",
+"nation": "Ireland",
+"tld": "ie"
+}
+]

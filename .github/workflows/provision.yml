@@ -1,0 +1,23 @@
+name: Provision a name manually
+on:
+  workflow_dispatch:
+    inputs:
+      name:   { description: "Subdomain, e.g. aone-removals-and-uplifts", required: true }
+      target: { description: "GitHub Pages host, e.g. deadmanxxxii.github.io", required: true }
+      zone:   { description: "Zone", required: true, default: "ayrshire.scot" }
+jobs:
+  dns:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create CNAME
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+          NAME: ${{ inputs.name }}
+          TARGET: ${{ inputs.target }}
+        run: |
+          [[ "$NAME" =~ ^[a-z0-9][a-z0-9-]{1,48}[a-z0-9]$ ]] || { echo "bad name"; exit 1; }
+          [[ "$TARGET" =~ ^[a-z0-9-]+\.github\.io$ ]] || { echo "bad target"; exit 1; }
+          curl -fsS -X POST "https://api.cloudflare.com/client/v4/zones/$CF_ZONE_ID/dns_records" \
+            -H "Authorization: Bearer $CF_API_TOKEN" -H "Content-Type: application/json" \
+            --data "{\"type\":\"CNAME\",\"name\":\"$NAME\",\"content\":\"$TARGET\",\"proxied\":false,\"ttl\":300}"

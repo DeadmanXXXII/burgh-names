@@ -1,0 +1,29 @@
+name: Takedown a name
+on:
+  workflow_dispatch:
+    inputs:
+      fqdn:   { description: "Full name to remove, e.g. bad-site.ayrshire.scot", required: true }
+      reason: { description: "Reason (kept in the run log)", required: true }
+jobs:
+  takedown:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete DNS records for the name
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ZONES_JSON: ${{ secrets.CF_ZONES_JSON }}   # {"ayrshire.scot":"<zone id>", ...}
+          FQDN: ${{ inputs.fqdn }}
+          REASON: ${{ inputs.reason }}
+        run: |
+          set -euo pipefail
+          [[ "$FQDN" =~ ^[a-z0-9-]+\.[a-z0-9-]+\.[a-z]+$ ]] || { echo "bad name"; exit 1; }
+          ZONE="${FQDN#*.}"
+          ZID=$(echo "$CF_ZONES_JSON" | jq -r --arg z "$ZONE" '.[$z] // empty')
+          [ -n "$ZID" ] || { echo "unknown zone $ZONE"; exit 1; }
+          IDS=$(curl -fsS "https://api.cloudflare.com/client/v4/zones/$ZID/dns_records?name=$FQDN" -H "Authorization: Bearer $CF_API_TOKEN" | jq -r '.result[].id')
+          [ -n "$IDS" ] || { echo "no records found for $FQDN"; exit 1; }
+          for id in $IDS; do
+            curl -fsS -X DELETE "https://api.cloudflare.com/client/v4/zones/$ZID/dns_records/$id" -H "Authorization: Bearer $CF_API_TOKEN" >/dev/null
+            echo "deleted record $id"
+          done
+          echo "Takedown of $FQDN at $(date -u +%FT%TZ). Reason: $REASON" >> "$GITHUB_STEP_SUMMARY"

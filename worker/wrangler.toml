@@ -1,0 +1,18 @@
+name = "burgh-names"
+main = "index.js"
+compatibility_date = "2026-01-01"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "PUT_KV_NAMESPACE_ID_HERE"   # npx wrangler kv namespace create burgh-names
+
+[vars]
+# Every zone listed here goes live on the site. Add one entry per domain you have registered.
+ZONES = '{"ayrshire.scot":"PUT_ZONE_ID","london.uk":"PUT_ZONE_ID","pontapandy.wales":"PUT_ZONE_ID"}'
+ALLOWED_ORIGIN = "https://deadmanxxxii.github.io"
+ADDR_SOL = "68RRYztTa4xxqoWHWzhMzP7MwoBCsKsSrCPMrWkN4Q9B"
+ADDR_BTC = "bc1qc0srhc3rqq737hucamymae7999m9d4jv7gfhhe"
+ADDR_ETH = "0x25290a3b033A39dFa0FB08B5b3a51576553E6752"
+SOL_RPC = "https://api.mainnet-beta.solana.com"
+ETH_RPC = "https://ethereum-rpc.publicnode.com"
+# Secret (not here): npx wrangler secret put CF_API_TOKEN   (Zone > DNS > Edit, this zone only)

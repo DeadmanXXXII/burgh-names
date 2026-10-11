@@ -1,0 +1,4 @@
+{
+  "allowedTlds": ["scot", "wales", "uk", "ie"],
+  "reserved": ["gov","org","nhs","police","mod","parliament","ac","sch","co","com","net","ltd","plc","me","edu","mil","army","navy","bank","hmrc","council","court","ambulance","fire","post","mail","admin","www","dwp","dvla","hse","garda","charity","registry"]
+}
